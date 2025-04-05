@@ -2,6 +2,7 @@ repositories {
     // If Gradle begins failing for no apparent reason, try reordering the Mavens
     mavenCentral()
     maven { url 'https://jitpack.io' }
+    maven { url = 'https://maven.brott.dev/' }
     google() // Needed for androidx
 }
 
