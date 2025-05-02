@@ -18,7 +18,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
 
     // If you want it to always automatically be the latest version, replace the tag with -SNAPSHOT
-    implementation 'com.github.FOTMrobotics:TrailBlazer:0810d2120f'
+    implementation 'com.github.FOTMrobotics:TrailBlazer:6752d1420d'
 
     implementation 'com.acmerobotics.dashboard:dashboard:0.4.16'
 }

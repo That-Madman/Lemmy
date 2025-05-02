@@ -31,9 +31,9 @@ public class DriveValues {
     // TODO: Reverse motors if necessary.
     public static int[] reverseMotors = {1, 2, 3};
 
-    public static double posP = 0.1,
+    public static double posP = 0.04,
             posI = 0,
-            posD = 0,
+            posD = 0.01,
             posF = 0;
     // TODO: Tune the PIDF loops.
     final PIDF positionPID = new PIDF(posP, posI, posD, posF);

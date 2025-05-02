@@ -719,7 +719,7 @@ public class PathBuilder {
         spline.addPt(endPt);
 
         // Checks for when the path is reaching the end. When at the end, the path stops.
-        event(0.85, () -> {
+        event(0.75, () -> {
             if (drive.atTarget()) path.pathState = Path.State.STOP;
 
             return false;

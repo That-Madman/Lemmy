@@ -67,6 +67,8 @@ public class Path {
      * Runs the path.
      */
     public void run() {
+        this.spline.setSegment(0); // TODO: Add on main
+
         // Sets path state to continue.
         pathState = State.CONTINUE;
 
@@ -161,7 +163,7 @@ public class Path {
                     targetPose.set(new Pose2D(pose.getX(), pose.getY(), headingTarget));
 
                     // If the path is close to the end, set the target to the end.
-                    if (t > 0.85 && spline.getLength() - 4 == spline.getSegment()) {
+                    if (t > 0.75 && spline.getLength() - 4 == spline.getSegment()) {
                         pathState = State.PAUSE;
 
                         Vector2D endPt = spline.getPt(spline.getLength() - 1);

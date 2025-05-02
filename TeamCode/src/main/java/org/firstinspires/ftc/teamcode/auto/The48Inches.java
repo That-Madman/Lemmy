@@ -15,7 +15,10 @@ public class The48Inches extends LinearOpMode {
         Drive drive = new Drive(hardwareMap);
 
         Path thePath = drive.PathBuilder(new Vector2D(0, 0))
-                .point(new Vector2D(0, 48))
+                .translationalScale(0.5)
+                .point(new Vector2D(0, 150))
+                .point(new Vector2D(110, 150))
+                .point(new Vector2D(110, 230))
                 .build();
 
         waitForStart();
