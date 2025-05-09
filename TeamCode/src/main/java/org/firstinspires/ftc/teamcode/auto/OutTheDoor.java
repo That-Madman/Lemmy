@@ -8,7 +8,7 @@ import org.firstinspires.ftc.teamcode.trailblazer.path.Path;
 import org.fotmrobotics.trailblazer.Vector2D;
 
 @Autonomous
-public class The48Inches extends LinearOpMode {
+public class OutTheDoor extends LinearOpMode {
 
     @Override
     public void runOpMode() throws InterruptedException {
@@ -18,7 +18,7 @@ public class The48Inches extends LinearOpMode {
                 .translationalScale(0.5)
                 .point(new Vector2D(0, 150))
                 .point(new Vector2D(110, 150))
-                .point(new Vector2D(110, 230))
+                .point(new Vector2D(110, 245))
                 .build();
 
         waitForStart();

@@ -159,6 +159,13 @@ public class Drive {
         if (!rotate) {moveVector(new Pose2D(x, y, targetDriveHeading), false);}
     }
 
+    public void tankDrive (Gamepad gamepad) {
+        double l = -gamepad.left_stick_y;
+        double r = -gamepad.right_stick_y;
+
+        runMotors(new double[] {l, r, l, r});
+    }
+
     public void trueNorthDrive(Gamepad gamepad) {
         double x = gamepad.left_stick_x;
         double y = -gamepad.left_stick_y;

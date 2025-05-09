@@ -8,10 +8,11 @@ import org.firstinspires.ftc.teamcode.trailblazer.drivebase.Drive;
 @TeleOp
 public class Showtime extends LinearOpMode {
     boolean trueNorth, bHeld;
+    Drive drive;
 
     @Override
     public void runOpMode() throws InterruptedException {
-        Drive drive = new Drive(hardwareMap);
+        drive = new Drive(hardwareMap);
 
         waitForStart();
 
