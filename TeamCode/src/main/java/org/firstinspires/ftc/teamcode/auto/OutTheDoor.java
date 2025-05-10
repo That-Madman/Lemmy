@@ -5,7 +5,6 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 import org.firstinspires.ftc.teamcode.trailblazer.drivebase.Drive;
 import org.firstinspires.ftc.teamcode.trailblazer.path.Path;
-import org.fotmrobotics.trailblazer.Pose2D;
 import org.fotmrobotics.trailblazer.Vector2D;
 
 @Autonomous
@@ -20,7 +19,7 @@ public class OutTheDoor extends LinearOpMode {
                 .point(new Vector2D(2.5, 146))
                 .point(new Vector2D(71, 160.7))
                 .point(new Vector2D(103, 197.5))
-                .point(new Vector2D(32, 246.5))
+                .point(new Vector2D(53, 251.5))
                 .point(new Vector2D(-0.6, 372.7))
                 .point (new Vector2D(5, 500))
                 .point(new Vector2D(2, 1241))
