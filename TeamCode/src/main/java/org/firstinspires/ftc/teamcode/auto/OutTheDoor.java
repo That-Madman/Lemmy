@@ -16,6 +16,10 @@ public class OutTheDoor extends LinearOpMode {
 
         Path thePath = drive.PathBuilder(new Vector2D(0, 0))
                 .translationalScale(0.5)
+                .action(() -> {
+                    telemetry.addData("I'm at: ", drive.odometry.getPosition());
+                    telemetry.update();
+                }, Path.EventType.PARALLEL)
                 .point(new Vector2D(2.5, 146))
                 .point(new Vector2D(71, 160.7))
                 .point(new Vector2D(105.3, 197.5))
