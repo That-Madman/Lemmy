@@ -19,7 +19,7 @@ public class OutTheDoor extends LinearOpMode {
                 .point(new Vector2D(2.5, 146))
                 .point(new Vector2D(71, 160.7))
                 .point(new Vector2D(105.3, 197.5))
-                .point(new Vector2D(76, 244.8))
+                .point(new Vector2D(100, 263))
                 .point(new Vector2D(-1.5, 341.2))
                 .point (new Vector2D(5, 500))
                 .point(new Vector2D(2, 1241))
